@@ -5,8 +5,8 @@ const About = () => {
     <div>
       <h2>{ 'About' }</h2>
       <dl>
-        <dt>{ 'who am i' }</dt>
-        <dd>{ 'Student, Department of Computer Science' }</dd>
+        <dt>{ 'RiST' }</dt>
+        <dd>{ 'Security team: RItsumeikan Security Team' }</dd>
       </dl>
     </div>
   )

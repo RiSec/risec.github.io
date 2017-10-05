@@ -6,14 +6,20 @@ const Link = () => {
       <h2>Contact</h2>
       <ul>
         <li>
-          { 'GitHub => ' }
-          <a href={ 'https://github.com/myr523' } target="_blank">
-            { 'myr523' }
+          { 'GitHub  => ' }
+          <a href={ 'https://github.com/risec' } target="_blank">
+            { 'RiSec' }
           </a>
         </li>
         <li>
-          { 'Mail   => ' }
-          { 'pg.stgstar (at) gmail.com' }
+          { 'Mail    => ' }
+          { 'rits.sec (at) gmail.com' }
+        </li>
+        <li>
+          { 'Twitter => ' }
+          <a href={ 'https://twitter.com/realRiST' } target="_blank">
+            { 'realRiST' }
+          </a>
         </li>
       </ul>
     </div>

@@ -1,7 +1,7 @@
 {
-  "name": "myr523",
+  "name": "ritsumeikan_security_team",
   "version": "1.0.0",
-  "description": "My Profile site",
+  "description": "Our web site",
   "main": "./dist/index.html",
   "scripts": {
     "build": "webpack -p",
@@ -53,6 +53,6 @@
   "directories": {
     "test": "test"
   },
-  "author": "myr523",
-  "homepage": "https://myr523.github.io"
+  "author": "RiST",
+  "homepage": "https://risec.github.io"
 }

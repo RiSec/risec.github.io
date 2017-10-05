@@ -4,7 +4,7 @@ const Home = () => {
   return(
     <div>
       <h2>Home</h2>
-      { 'This page is my portfolio.' }
+      { 'This page is our website.' }
     </div>
   )
 }
