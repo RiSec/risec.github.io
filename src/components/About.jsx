@@ -6,7 +6,7 @@ const About = () => {
       <h2>{ 'About' }</h2>
       <dl>
         <dt>{ 'RiST' }</dt>
-        <dd>{ 'Security team: RItsumeikan Security Team' }</dd>
+        <dd>{ 'Security team: Ritsumeikan Security Team' }</dd>
       </dl>
     </div>
   )
