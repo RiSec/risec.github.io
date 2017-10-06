@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <footer style={ styles }>
-      <p><small>{ 'Copyright &copy; 2016-2017 RiST All rights reserved.' }</small></p>
+      <p><small>{ 'Copyright (C) 2016-2017 RiST All rights reserved.' }</small></p>
     </footer>
   )
 }

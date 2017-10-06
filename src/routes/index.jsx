@@ -18,7 +18,6 @@ const Routes = () => {
             <Route path={ '/about' } component={ About } exact />
             <Route path={ '/contact' } component={ Contact } exact />
             <Route path={ '/member' } component={ Member } exact />
-            <Route path={ '/member' } component={ Member } exact />
           </main>
         <Footer />
         </div>
