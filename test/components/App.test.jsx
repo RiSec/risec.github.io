@@ -1,11 +1,11 @@
 import React from 'react'
 import { expect } from 'chai'
 import { shallow } from 'enzyme'
-import App from 'components/App'
+import Home from 'components/Home'
 
-describe('<App />', () => {
-  it('should render single <h1>', () => {
-    const wrapper = shallow(<App />)
-    expect(wrapper.find('h1')).to.have.length(1)
+describe('<Home />', () => {
+  it('should render single <h2>', () => {
+    const wrapper = shallow(<Home />)
+    expect(wrapper.find('h2')).to.have.length(1)
   })
 })
