@@ -2,7 +2,7 @@ import React from 'react'
 
 const Member = () => {
   return (
-    <div>
+    <div className={ 'member' }>
       <h2>Team member</h2>
       <p>
         <ul>
