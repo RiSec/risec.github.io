@@ -12,9 +12,11 @@
   },
   "license": "MIT",
   "dependencies": {
+    "css-loader": "^0.28.8",
+    "history": "^4.6.3",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "history": "^4.6.3",
+    "react-bootstrap": "^0.32.0",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
@@ -54,5 +56,12 @@
     "test": "test"
   },
   "author": "RiST",
-  "homepage": "https://risec.github.io"
+  "homepage": "https://risec.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiSec/risec.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RiSec/risec.github.io/issues"
+  }
 }
