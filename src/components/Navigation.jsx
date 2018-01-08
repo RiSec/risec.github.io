@@ -7,7 +7,7 @@ const Navigation = () => {
 // TODO: awesome-font導入, navbar-brandアイコン作成
 
   return (
-    <Navbar>
+    <Navbar className={ 'navigation-bar' }>
       <Navbar.Header>
         <Navbar.Brand>
           {/* navbar-brandをどうにかする */}
@@ -18,13 +18,16 @@ const Navigation = () => {
       <Navbar.Collapse>
         <Nav>
           <NavItem eventKey={1}>
-            <Link to={ '/' }>{ 'Home' }</Link>
+            <Link to={ '/' } className={ 'navbar-prop' } >{ 'Home' }</Link>
           </NavItem>
           <NavItem eventKey={2}>
-            <Link to={ '/about' }>{ 'About' }</Link>
+            <Link to={ '/about' } className={ 'navbar-prop' }>{ 'About' }</Link>
           </NavItem>
           <NavItem eventKey={3}>
-            <Link to={ '/contact' }>{ 'Contact' }</Link>
+            <Link to={ '/contact' } className={ 'navbar-prop' }>{ 'Contact' }</Link>
+          </NavItem>
+          <NavItem eventKey={4}>
+            <Link to={ '/activities' } className={ 'navbar-prop' }>{ 'Activities' }</Link>
           </NavItem>
         </Nav>
       </Navbar.Collapse>

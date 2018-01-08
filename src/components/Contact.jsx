@@ -2,7 +2,7 @@ import React from 'react'
 
 const Link = () => {
   return (
-    <div className={ 'link' }>
+    <div className={ 'link container' }>
       <h2>Contact</h2>
       <ul>
         <li>

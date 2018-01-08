@@ -3,7 +3,7 @@ import React from 'react'
 
 const Home = () => {
   return(
-    <div className={ 'home' }>
+    <div className={ 'home container' }>
       <h2>Home</h2>
       { 'Hello, world.' }
       { '' }

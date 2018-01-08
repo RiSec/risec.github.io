@@ -1,13 +1,22 @@
 import React from 'react'
-import Navigation from './Navigation.jsx'
+import { Jumbotron } from 'react-bootstrap'
+
 
 
 const Header = () => {
   return(
-    <header className={ 'header' }>
-      <Navigation />
-      <h1>{ 'RiST: Ritsumeikan Security Team' }</h1>
-    </header>
+    <div className={ 'header' }>
+      <Jumbotron className={ 'jumbotron' }>
+        <a href={ 'https://twitter.com/realRiST' }>
+          <img
+            src={ 'https://pbs.twimg.com/profile_images/851792500469583872/Tu-tDb5J_400x400.jpg' }
+            width='230'
+            height='230'
+          />
+        </a>
+        <h1 className={ 'header-name' }>{ 'RiST: Ritsumeikan Security Team' }</h1>
+      </Jumbotron>
+    </div>
   )
 }
 

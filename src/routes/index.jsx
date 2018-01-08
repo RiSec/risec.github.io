@@ -5,17 +5,21 @@ import Home from '../components/Home.jsx'
 import About from '../components/About.jsx'
 import Contact from '../components/Contact.jsx'
 import Footer from '../components/Footer'
+import Activities from '../components/Activities'
+import Navigation from '../components/Navigation.jsx'
 
 const Routes = () => {
   return (
     <Router>
       <Route>
         <div>
+          <Navigation />
           <Header />
           <main className={ 'container' }>
             <Route path={ '/' } component={ Home } exact />
             <Route path={ '/about' } component={ About } exact />
             <Route path={ '/contact' } component={ Contact } exact />
+            <Route path={ '/activities' } component={ Activities } exact/>
           </main>
         <Footer />
         </div>
