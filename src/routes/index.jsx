@@ -4,7 +4,6 @@ import Header from '../components/Header.jsx'
 import Home from '../components/Home.jsx'
 import About from '../components/About.jsx'
 import Contact from '../components/Contact.jsx'
-import Member from '../components/Member'
 import Footer from '../components/Footer'
 
 const Routes = () => {
@@ -17,7 +16,6 @@ const Routes = () => {
             <Route path={ '/' } component={ Home } exact />
             <Route path={ '/about' } component={ About } exact />
             <Route path={ '/contact' } component={ Contact } exact />
-            <Route path={ '/member' } component={ Member } exact />
           </main>
         <Footer />
         </div>

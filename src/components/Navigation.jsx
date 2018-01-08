@@ -1,23 +1,34 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const Navigation = () => {
-  const styles = {
-    flex: {
-      display: 'inline',
-      padding: '0 5px',
-    }
-  }
+
+// TODO: awesome-font導入, navbar-brandアイコン作成
 
   return (
-    <nav>
-      <ul>
-        <li style={ styles.flex }><Link to={ '/' }>{ 'Home' }</Link></li>
-        <li style={ styles.flex }><Link to={ '/about' }>{ 'About' }</Link></li>
-        <li style={ styles.flex }><Link to={ '/member' }>{ 'Member' }</Link></li>
-        <li style={ styles.flex }><Link to={ '/contact' }>{ 'Contact' }</Link></li>
-      </ul>
-    </nav>
+    <Navbar>
+      <Navbar.Header>
+        <Navbar.Brand>
+          {/* navbar-brandをどうにかする */}
+          <Link to={ '/' } className={ 'navbar-brand' }>{ 'りすと' }</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle />
+      </Navbar.Header>
+      <Navbar.Collapse>
+        <Nav>
+          <NavItem eventKey={1}>
+            <Link to={ '/' }>{ 'Home' }</Link>
+          </NavItem>
+          <NavItem eventKey={2}>
+            <Link to={ '/about' }>{ 'About' }</Link>
+          </NavItem>
+          <NavItem eventKey={3}>
+            <Link to={ '/contact' }>{ 'Contact' }</Link>
+          </NavItem>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 
