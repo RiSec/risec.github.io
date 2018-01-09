@@ -11,7 +11,7 @@ const Navigation = () => {
       <Navbar.Header>
         <Navbar.Brand>
           {/* navbar-brandをどうにかする */}
-          <Link to={ '/' } className={ 'navbar-brand' }>{ 'りすと' }</Link>
+          <Link to={ '/' } className={ 'navbar-brand' }>{ 'RiST' }</Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>

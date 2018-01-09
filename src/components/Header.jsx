@@ -6,7 +6,7 @@ import { Jumbotron } from 'react-bootstrap'
 const Header = () => {
   return(
     <div className={ 'header' }>
-      <Jumbotron className={ 'jumbotron' }>
+      <Jumbotron className={ 'jumbotron-header' }>
         <a href={ 'https://twitter.com/realRiST' }>
           <img
             src={ 'https://pbs.twimg.com/profile_images/851792500469583872/Tu-tDb5J_400x400.jpg' }
@@ -14,7 +14,7 @@ const Header = () => {
             height='230'
           />
         </a>
-        <h1 className={ 'header-name' }>{ 'RiST: Ritsumeikan Security Team' }</h1>
+        <h2 className={ 'header-name' }>{ 'RiST: Ritsumeikan Security Team' }</h2>
       </Jumbotron>
     </div>
   )
