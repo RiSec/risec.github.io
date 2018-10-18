@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "deploy": "./bin/deploy.sh"
+    "deploy": "./bin/deploy.sh",
+    "start": "webpack-dev-server --progress --colors --inline --watch"
   },
   "dependencies": {
     "@babel/core": "7.1.2",
