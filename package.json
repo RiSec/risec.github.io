@@ -4,7 +4,7 @@
   "description": "Our web site",
   "private": true,
   "scripts": {
-    "build": "./bin/build.sh",
+    "build": "webpack",
     "deploy": "./bin/deploy.sh"
   },
   "dependencies": {
