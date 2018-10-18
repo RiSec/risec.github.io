@@ -4,8 +4,8 @@
   "description": "Our web site",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "deploy": "gh-pages -d dist -b master"
+    "build": "./bin/build.sh",
+    "deploy": "./bin/deploy.sh"
   },
   "dependencies": {
     "css-loader": "^0.28.8",

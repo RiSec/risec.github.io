@@ -52,7 +52,7 @@ export default {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(ttf|eot|svg|png|jpg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot|svg|png|jpg|yml)$/,
         use: [
           {
             loader: 'file-loader',
