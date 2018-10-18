@@ -2,15 +2,15 @@
   "name": "ritsumeikan_security_team",
   "version": "1.0.0",
   "description": "Our web site",
-  "main": "./dist/index.html",
   "private": true,
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server --progress --colors --inline --watch"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "css-loader": "^0.28.8",
     "file-loader": "^1.1.6",
+    "gh-pages": "2.0.1",
     "history": "^4.6.3",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",

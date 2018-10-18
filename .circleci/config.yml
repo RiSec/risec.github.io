@@ -20,7 +20,7 @@ jobs:
           command: npm install
       - run:
           name: Build
-          command: gulp build
+          command: npm run build
       - deploy:
           name: Deploy
-          command: gulp deploy
+          command: npm run deploy
