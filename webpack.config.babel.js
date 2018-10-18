@@ -3,8 +3,8 @@
  * @type {file}
  */
 
-import path              from 'path'
-import webpack           from 'webpack'
+import path from 'path'
+import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
@@ -58,9 +58,8 @@ export default {
             loader: 'file-loader',
           },
         ],
-      },
+      }
     ]
-
   },
 
   plugins: [
@@ -73,7 +72,8 @@ export default {
     new webpack.NoEmitOnErrorsPlugin(),
     // do not emit compiled assets that include errors
 
-    new HtmlWebpackPlugin({ template: './src/index.html' })
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({ filename: '404.html', template: './src/404.html' })
   ],
 
   devServer: {
