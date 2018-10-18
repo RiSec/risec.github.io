@@ -23,4 +23,4 @@ jobs:
           command: npm run build
       - deploy:
           name: Deploy
-          command: npm run deploy
+          command: ./bin/deploy.sh
