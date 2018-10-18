@@ -7,7 +7,6 @@
     "build": "webpack -p",
     "start": "webpack-dev-server --progress --colors --inline --watch",
     "lint": "eslint --ext=jsx --ext=js .",
-    "test": "cross-env NODE_ENV=test NODE_PATH=src:test mocha",
     "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
@@ -53,9 +52,6 @@
     "react-test-renderer": "^15.6.1",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
-  },
-  "directories": {
-    "test": "test"
   },
   "author": "RiST",
   "homepage": "https://risec.github.io",

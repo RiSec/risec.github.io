@@ -1,10 +1,10 @@
 module.exports = {
   env: {
-    browser  : true,
-    commonjs : true,
-    es6      : true,
-    node     : true,
-    mocha    : true,
+    browser: true,
+    commonjs: true,
+    es6: true,
+    node: true,
+    mocha: true,
   },
   plugins: [
     'import',
@@ -17,21 +17,20 @@ module.exports = {
   ],
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion  : 2017,
-    sourceType   : 'module',
-    ecmaFeatures : {
-      experimentalObjectRestSpread : true,
-      jsx                          : true,
+    ecmaVersion: 2017,
+    sourceType: 'module',
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      jsx: true,
     }
   },
   settings: {
     'import/resolver': {
       node: {
-        paths      : [
+        paths: [
           'src',
-          'test',
         ],
-        extensions : [
+        extensions: [
           '.js',
           '.jsx',
         ],
