@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Our web site",
   "main": "./dist/index.html",
+  "private": true,
   "scripts": {
     "build": "webpack -p",
     "start": "webpack-dev-server --progress --colors --inline --watch",
