@@ -46,7 +46,6 @@ export default {
       {
         test: /.jsx$/,
         loader: 'babel-loader'
-        // use: [{ loader: 'babel-loader?compact=false' }]
       },
       {
         test: /\.css$/,
