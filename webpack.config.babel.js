@@ -8,6 +8,7 @@ import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
+  mode: 'development',
 
   entry: [
     'react-hot-loader/patch',
@@ -27,7 +28,7 @@ export default {
 
   output: {
     path: path.join(__dirname, '/dist/'),
-    publicPath: '',
+    // publicPath: '',
     filename: 'bundle.js'
   },
 
@@ -44,8 +45,9 @@ export default {
   module: {
     rules: [
       {
-        test: /.jsx?$/,
-        use: [{ loader: 'babel-loader?compact=false' }]
+        test: /.jsx$/,
+        loader: 'babel-loader'
+        // use: [{ loader: 'babel-loader?compact=false' }]
       },
       {
         test: /\.css$/,

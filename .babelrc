@@ -1,12 +1,9 @@
 {
   "presets": [
-    "react",
-    "env"
+    "@babel/preset-env",
+    "@babel/preset-react"
   ],
-  "plugins" : [
-    "transform-decorators-legacy",
-    "transform-class-properties",
-    "transform-object-rest-spread",
+  "plugins": [
     "react-hot-loader/babel"
   ]
 }
