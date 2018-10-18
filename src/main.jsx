@@ -2,8 +2,6 @@ import React from 'react'
 import { render as reactRender } from 'react-dom'
 import { AppContainer as HMRContainer } from 'react-hot-loader'
 import App from './routes'
-import 'styles/style.css'
-
 
 /**
  * render React App
