@@ -1,4 +1,4 @@
-# risec.guthub.io
+# risec.github.io
 [![CircleCI](https://circleci.com/gh/RiSec/risec.github.io/tree/develop.svg?style=svg)](https://circleci.com/gh/RiSec/risec.github.io/tree/develop)
 
 ## 環境構築
