@@ -1,0 +1,158 @@
+body {
+  background: url("body_back.png");
+  overflow-y: scroll;
+  line-height: 1.5em;
+  font-family: sans-serif;
+}
+
+div#main {
+  width: 800px;
+  margin: 4px auto;
+  /* border: solid 2px #700; */
+  border: solid 2px #6495ed;
+  background-color: #fff;
+}
+
+div#head {
+  margin: 16px 16px;
+  padding: 2px 0px;
+  border-bottom: solid 2px #6495ed;
+}
+
+div#head h1 {
+  color: #000;
+  margin-top: -45px;
+  margin-left: 16px;
+  margin-bottom: 0px;
+  padding-bottom: 16px;
+  font-size: 36pt;
+  font-family: serif;
+}
+
+div#head h1 a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+div#head h1 a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+div#head h1 a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+div#head div#tagline {
+  font-size: 10pt;
+  text-align: right;
+}
+
+div#article {
+  margin-top: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 48px;
+  width: 630px;
+  float: right;
+}
+
+div#breadcrumbs {
+  margin-left: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 10pt;
+  padding: 0px;
+}
+
+div#article div.section {
+  margin-left: 8px;
+  padding: 2px;
+  font-size: 11pt;
+}
+
+div#article div.section h2 {
+  margin: 24px 0px;
+  padding-left: 4px;
+  /* border-bottom: 1px solid #700; */
+  border-bottom: 1px solid #6495ed;
+  /* border-left: 8px solid #700; */
+  border-left: 8px dashed #6495ed;
+}
+
+div#article div.section h3 {
+  margin: 16px 0px;
+  border-bottom: 1px dashed #08f;
+}
+
+div#article div.section ul {
+  margin: 4px;
+}
+
+div#article dt {
+  font-weight: bold;
+}
+
+div.detail {
+  text-align: right;
+  margin: 8px 16px;
+}
+
+div#navi {
+  margin: 16px 0px 16px 24px;
+  width: 110px;
+  float: left;
+}
+
+#navi a {
+  display: block
+}
+
+div.navibutton {
+  margin: 10px 0px;
+  padding: 2px 0px;
+  background-color: #707070;
+  text-align: center;
+  border-top: solid 4px #ddd;
+  border-left: solid 4px #aaa;
+  border-bottom: solid 4px #444;
+  border-right: solid 4px #666;
+}
+
+div.navibutton:hover {
+  margin: 8px 0px;
+  padding: 2px 0px;
+  background-color: #707070;
+  text-align: center;
+  border-top: solid 4px #444;
+  border-left: solid 4px #666;
+  border-bottom: solid 4px #ddd;
+  border-right: solid 4px #aaa;
+}
+
+div.navibutton a:link {
+  color: #fff
+}
+
+div.navibutton a:hover {
+  color: #fff
+}
+
+div.navibutton a:visited {
+  color: #fff
+}
+
+span {
+  display: inline-block;
+  width: 7em;
+}
+
+div#footer {
+  clear: both;
+  color: #fff;
+  /* background: #700; */
+  background: #6495ed;
+  text-align: center;
+  font-size: 8pt;
+}
