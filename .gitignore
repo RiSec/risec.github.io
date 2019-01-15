@@ -3,3 +3,4 @@
 /dist
 *.log
 memo.txt
+yarn.lock
