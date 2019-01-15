@@ -3,9 +3,10 @@
  * @type {file}
  */
 
-import path from 'path'
-import webpack from 'webpack'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+import path from 'path';
+import webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 export default {
   mode: 'development',
@@ -57,8 +58,15 @@ export default {
     new webpack.HotModuleReplacementPlugin(), // Enable HMR globally
     new webpack.NamedModulesPlugin(), // Show readable module names in the browser console on HMR updates
     new webpack.NoEmitOnErrorsPlugin(),
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
-    new HtmlWebpackPlugin({ filename: '404.html', template: './src/404.html' })
+    new CopyWebpackPlugin(
+      [
+        {
+          from: '',
+          to: '',
+        },
+      ],
+      { context: 'src' }
+    ),
   ],
 
   devServer: {
