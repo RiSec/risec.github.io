@@ -17,5 +17,7 @@
 3. ブラウザで http://localhost:3030/ を開き変更を確認する
 4. developブランチにpushする
 
+livereloadという仕組みにより、ソースを編集すると自動でブラウザに表示されている内容が更新されるようになっています。
+
 developブランチにpushすると、Circle CIが走り、自動でmasterブランチにビルド済みファイルがpushされます。
 masterブランチにpush後、Github Pagesに変更内容が反映されます。
