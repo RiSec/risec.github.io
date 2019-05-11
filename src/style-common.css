@@ -1,8 +1,3 @@
-body {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 header {
   border-bottom: solid 2px #6495ed;
   padding: 10px;
@@ -15,20 +10,11 @@ header img {
 header a {
   text-decoration: none;
   color: #777777;
-  font-size: 48px;
 }
+
 
 header a:hover {
   color: #5e5e5e;
-}
-
-main {
-  display: flex;
-}
-
-nav {
-  width: 240px;
-  padding-right: 20px;
 }
 
 nav ul {
@@ -50,10 +36,6 @@ nav li a {
 
 nav li a:hover {
   color: #5e5e5e;
-}
-
-article {
-  flex: 1;
 }
 
 footer {

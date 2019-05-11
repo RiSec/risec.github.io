@@ -1,0 +1,27 @@
+body {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+header img {
+  width: 64px;
+  height: 64px;
+}
+
+header a {
+  font-size: 48px;
+}
+
+
+main {
+  display: flex;
+}
+
+nav {
+  width: 240px;
+  padding-right: 20px;
+}
+
+article {
+  flex: 1;
+}
