@@ -1,16 +1,16 @@
-version: 2
+version: 2.1
 
-workflows:
-  version: 2
-  workflow:
-    jobs:
-    - deploy:
-        filters:
-          branches:
-            only: develop
+# workflows:
+#   version: 2
+#   workflow:
+#     jobs:
+#     - deploy:
+#         filters:
+#           branches:
+#             only: develop
 
 jobs:
-  deploy:
+  build:
     docker:
     - image: circleci/node:10.12.0
     steps:
