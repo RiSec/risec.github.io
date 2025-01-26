@@ -1,0 +1,213 @@
+
+
+:root {
+  --clip-gray: #D9D9D9;
+}
+
+body {
+  font-family: 'Lexend',sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 48px);
+  grid-auto-rows: 48px;
+  border: 1px solid #add8e6; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.grid-item {
+  border: 0.1px solid #D3D3D3; 
+  transition: background-color 0.3s ease-in-out; 
+}
+
+header {
+  font-family: 'Geometos', sans-serif;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: sticky;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+
+  padding: 20px;
+  display: flex;
+
+  --linear-gradient-color: #4D4D4D;
+
+  background-image: linear-gradient( 135deg, 
+  transparent 0%, 
+  transparent calc(100% - 25px), 
+  var(--linear-gradient-color) calc(100% - 25px), 
+  var(--linear-gradient-color) calc(100% - 23px),
+  transparent calc(100% - 23px),
+  transparent calc(100% - 20px), 
+  var(--linear-gradient-color) calc(100% - 20px), 
+  var(--linear-gradient-color) calc(100% - 18px),
+  transparent calc(100% - 18px),
+  transparent calc(100% - 15px), 
+  var(--linear-gradient-color) calc(100% - 15px), 
+  var(--linear-gradient-color) calc(100% - 13px),
+  transparent calc(100% - 13px),
+  transparent calc(100% - 10px), 
+  var(--linear-gradient-color) calc(100% - 10px), 
+  var(--linear-gradient-color) calc(100% - 8px),
+  transparent calc(100% - 8px),
+  transparent calc(100% - 5px), 
+  var(--linear-gradient-color) calc(100% - 5px), 
+  var(--linear-gradient-color) calc(100% - 3px),
+  transparent calc(100% - 3px),
+  transparent 100%);
+  );
+
+  justify-content: space-between; 
+  align-items: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.logo {
+  font-size: 2em; 
+  font-weight: bold;
+}
+
+nav {
+
+  ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  }
+  li {
+    margin-left: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #4D4D4D;
+  }
+}
+
+
+
+
+main {
+  padding: 40px;
+}
+
+section {
+  margin-bottom: 40px;  
+}
+section > p.content{
+  color: #303030;
+}
+
+h1 {
+  color: #3C3C3C;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.before-clip {
+  font-size: 2.5em;
+  margin: 0 0 -1.85em 0;
+  width: 10rem;
+
+  position: relative;
+  z-index: -1;
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  background-image: linear-gradient(-45deg,
+    transparent 0%,
+    transparent 3%,
+    var(--clip-gray) 3%,
+    var(--clip-gray) 6%,
+    transparent 6%,
+    transparent 9%,
+    var(--clip-gray) 9%,
+    var(--clip-gray) 12%,
+    transparent 12%,
+    transparent 15%,
+    var(--clip-gray) 15%,
+    var(--clip-gray) 18%,
+    transparent 18%,
+    transparent 21%,
+    var(--clip-gray) 21%,
+    var(--clip-gray) 24%,
+    transparent 24%,
+    transparent 27%,
+    var(--clip-gray) 27%,
+    var(--clip-gray) 30%,
+    transparent 30%,
+    transparent 33%,
+    var(--clip-gray) 33%,
+    var(--clip-gray) 36%,
+    transparent 36%,
+    transparent 39%,
+    var(--clip-gray) 39%,
+    var(--clip-gray) 42%,
+    transparent 42%,
+    transparent 45%,
+    var(--clip-gray) 45%,
+    var(--clip-gray) 48%,
+    transparent 48%,
+    transparent 51%,
+    var(--clip-gray) 51%,
+    var(--clip-gray) 54%,
+    transparent 54%,
+    transparent 57%,
+    var(--clip-gray) 57%,
+    var(--clip-gray) 60%,
+    transparent 60%,
+    transparent 63%,
+    var(--clip-gray) 63%,
+    var(--clip-gray) 66%,
+    transparent 66%,
+    transparent 69%,
+    var(--clip-gray) 69%,
+    var(--clip-gray) 72%,
+    transparent 72%,
+    transparent 75%,
+    var(--clip-gray) 75%,
+    var(--clip-gray) 78%,
+    transparent 78%,
+    transparent 81%,
+    var(--clip-gray) 81%,
+    var(--clip-gray) 84%,
+    transparent 84%,
+    transparent 87%,
+    var(--clip-gray) 87%,
+    var(--clip-gray) 90%,
+    transparent 90%,
+    transparent 93%,
+    var(--clip-gray) 93%,
+    var(--clip-gray) 96%,
+    transparent 96%,
+    transparent 100%
+);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+section {
+    position: relative;
+    border-left: 5px solid black; 
+    padding-left: 20px; 
+}
+
