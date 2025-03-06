@@ -8,7 +8,7 @@
     "css:watch": "npx tailwindcss -i ./tailwind.css -o ./static/css/tailwind.css --watch",
     "css:build": "npx tailwindcss -i ./tailwind.css -o ./static/css/tailwind.css",
     "ts:build": "tsc --outDir ./static/js static/ts/**/*.ts",
-    "ts:watch": "tsc --outDir ./static/js --watch static/ts/**/*.ts",
+    "ts:watch": "tsc --outDir ./static/js --watch static/ts/**/*.ts"
   }
 }
 
