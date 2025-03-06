@@ -15,7 +15,6 @@
 <!-- tailwind css+custom css -->
 <link href="static/css/tailwind.css" type="text/css" rel="stylesheet">
 <link href="static/css/style.css" type="text/css" rel="stylesheet">
-
 <!-- overlay scrollbars -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/styles/overlayscrollbars.min.css" integrity="sha512-1upUL7mU0vRAdxf0hllx44X8k95N0hSFoljRxrCYLvqn7Ih2lGbzgrNTDpXUPnHo/m6lB7JZzteEy7IXHuJ/cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.10.1/browser/overlayscrollbars.browser.es6.min.js" integrity="sha512-bDTkSDb0/IRzL9tINJGwc2iQwmqVF3X9y7Doo7ZWvtfUM0y8Wuw1yqbYSPCBfVUBun64XIyPfXStDf9vc7cR8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -25,37 +24,41 @@
 <body data-overlayscrollbars-initialize>
 <div class="grid-container" id="grid"></div>
 <header>
-  <div class="logo">
-    * <!-- ろごひあー -->
+  <div id="header-contents">
+    <div id="header-line"></div>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#information">INFORMATION</a></li>
+        <li><a href="#member">MEMBER</a></li>
+        <li><a href="#sponsor">SPONSOR</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      * <!-- ろごひあー -->
+    </div>  
   </div>
-  <nav>
-    <ul>
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#information">INFORMATION</a></li>
-      <li><a href="#member">MEMBER</a></li>
-      <li><a href="#sponsor">SPONSOR</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-  </nav>
-
 </header>
 
 <main>
-  <section id="information" class="pb-10 pl-9">
-    <p class="before-clip"> 情報</p>
-    <h1>INFORMATION</h1>
-    <p class="content mt-6 mb-15">RiSTはサイバーセキュリティに関する活動や研究をするために2019年に情報理工学部プロジェクト団体として認定された団体です。<br>
-      2022年からは対面活動を再開し、現在は活発な活動を行っています。</p>
-  </section>
-
-  <section id="member" class="pb-10 pl-9">
-    <p class="before-clip">部員</p>
-    <h1>MEMBER</h1>
-    <p class="content mt-6 mb-15">現在RISTには<br>
-    2年43人、3年14人、4年1人の<br>
-    総勢58名の部員が所属しています</p>
-  </section>
+  <div class="contents-container">
+    <section id="information" class="content-left">
+      <div class="vertical-bar">
+        <div class="vertical-bar-text">.text:00401000</div>
+        <div class="vertical-bar-line"></div>
+      </div>
+      <div class="content">
+        <div class="content-title">
+          <div class="content-title-text">INFORMATION</div>
+          <div class="content-title-bg-text">情報</div>
+        </div>
+        <p class="content-text">RiSTはサイバーセキュリティに関する活動や研究をするために2019年に情報理工学部プロジェクト団体として認定された団体です。<br>
+          2022年からは対面活動を再開し、現在は活発な活動を行っています</p>
+      </div>
+    </section>
+  </div>
 </main>
 
 <footer>

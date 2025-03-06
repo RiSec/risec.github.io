@@ -3,5 +3,43 @@
 @tailwind utilities;
 
 @layer components {
-    
+    .contents-container {
+        @apply flex flex-col items-center gap-12 h-svh;
+    }
+
+    .content-left {
+        @apply flex gap-12 items-start self-stretch;
+    }
+
+    .vertical-bar {
+        @apply flex items-start self-stretch pt-10 h-full;
+    }
+
+    .vertical-bar-line {
+        @apply w-3 relative bg-gray h-full;
+    }
+
+    .vertical-bar-text {
+        @apply relative origin-top-left rotate-90 justify-start text-gray text-[10px] font-light font-['Lexend'];
+    }
+
+    .content {
+        @apply flex pb-14 flex-col items-start gap-6;
+    }
+
+    .content-title {
+        @apply flex flex-col items-start justify-start;
+    }
+
+    .content-title-text {
+        @apply text-3xl font-bold;
+    }
+
+    .content-title-bg-text {
+        @apply text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500;
+    }
+
+    .content-text {
+        @apply text-lg;
+    }
 }

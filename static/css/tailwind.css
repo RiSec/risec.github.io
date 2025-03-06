@@ -124,7 +124,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -554,18 +554,90 @@ video {
   display: none;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.contents-container {
+  display: flex;
+  height: 100svh;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.content-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  align-self: stretch;
+}
+
+.vertical-bar {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  align-self: stretch;
+  padding-top: 2.5rem;
+}
+
+.vertical-bar-line {
+  position: relative;
+  height: 100%;
+  width: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(77 77 77 / var(--tw-bg-opacity, 1));
+}
+
+.vertical-bar-text {
+  position: relative;
+  transform-origin: top left;
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  justify-content: flex-start;
+  font-family: 'Lexend';
+  font-size: 10px;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(77 77 77 / var(--tw-text-opacity, 1));
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.content-title-text {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.content-title-bg-text {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #a855f7 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: transparent;
+}
+
+.content-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .grid {
   display: grid;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pl-9 {
-  padding-left: 2.25rem;
 }
